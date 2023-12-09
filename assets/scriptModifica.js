@@ -35,7 +35,7 @@ window.onload = async () => {
       <form id="apiForm">
 
       <label for="description" class="d-flex flex-column mt-5">Il Name del prodotto che sta gestendo è:</label>
-      <input type="text" id="description" name="description" value=${cardStampata.name} disabled>
+      <input type="text" id="name" name="description" value=${cardStampata.name} disabled>
 
       <label for="description" class="d-flex flex-column mt-5">Description:</label>
       <input type="text" id="description" name="description" value=${cardStampata.description} required>
@@ -74,7 +74,6 @@ window.onload = async () => {
 function resetForm(){
     let result = confirm('Are you sure?')
     if(result === true){
-    document.querySelector("#name").value = ""
     document.querySelector("#description").value = ""
     document.querySelector("#brand").value = ""
     document.querySelector("#imageUrl").value = ""
