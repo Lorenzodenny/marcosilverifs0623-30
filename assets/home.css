@@ -15,8 +15,9 @@ span{
     display: flex;
             align-items: baseline;
             justify-content: center;
-            height: 100vh
+            
 }
+
 
 .diPiu,
 .modifica,
@@ -36,6 +37,15 @@ span{
     border: 3px solid rgb(143, 143, 143);
 }
 
+.diPiu:hover{
+    background-color: green;
+}
+
+.modifica:hover{
+    background-color: red;
+}
+
+
 
 .flow{
     text-overflow: hidden;
@@ -44,11 +54,11 @@ span{
 }
 
 .btn-success{
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.662);
 }
 
 .btn-danger{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.662);
 }
 
 .card{
@@ -83,4 +93,8 @@ span{
     100% {
         transform: translateY(0);
     }
+}
+
+.grandezzaImg{
+    height: 35vh;
 }

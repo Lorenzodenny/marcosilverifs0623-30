@@ -5,36 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="/assets/backOffice.css">
     <script src="/assets/scriptBackOffice.js" defer></script>
     <title>Back Office</title>
 </head>
-<body>
+<body class="bg-dark text-white">
 
-    <h1>Creazione Prodotti</h1>
-        <form id="apiForm">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" required>
+    <h1 class="text-center my-5">Creazione Prodotti</h1>
+        <form id="apiForm" class="text-center">
+          <label for="name" >Nome:</label>
+          <input type="text" id="name" name="name" required> 
 
           <label for="description">Description:</label>
-          <input type="text" id="description" name="description" required>
+          <input type="text" id="description" name="description" required> 
 
           <label for="brand">Brand:</label>
-          <input type="text" id="brand" name="brand" required>
+          <input type="text" id="brand" name="brand" required> 
 
           <label for="imageUrl">imageUrl:</label>
-          <input type="text" id="imageUrl" name="imageUrl" required>
+          <input type="text" id="imageUrl" name="imageUrl" required> 
 
           <label for="prince">Price:</label>
           <input type="number" id="price" name="price" required>
       
           
-          <button type="button" onclick="submitForm()">cliccami </button>
-          <button type="reset" > reset </button>
+          <div class="my-5 d-flex justify-content-center">
+              <button type="button" class="mx-3 btn btn-secondary btn-sell" onclick="submitForm()"> Metti Oggetto In Vendita </button>
+              <button type="reset" class="mx-3 btn btn-secondary btn-reset" > reset </button>
+          </div>
         </form>
 
 
         <div class="container">
-            <h2>Prodotti appena aggiunti</h2>
+            <h2 class="text-center my-5">Prodotti appena aggiunti</h2>
             <div class="row">
                 
 
@@ -42,8 +45,8 @@
 
         </div>
 
-        <div>
-            <a class="btn btn-primary" href="homePage.html" role="button">Torna sull'Home Page</a>
+        <div class="my-5 d-flex justify-content-center">
+            <a class="btn btn-primary btn-home" href="homePage.html" role="button">Torna sull'Home Page</a>
         </div>
         
 </body>

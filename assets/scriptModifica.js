@@ -51,16 +51,18 @@ window.onload = async () => {
 
   </form>
       
-     <div>
-     <button class="btn btn-primary" type="reset" onclick="resetForm()">Reset Form</button>
-     </div>
-
-     <div>
-     <button class="btn btn-primary" onclick="cancella()">Elimina Risorse</button>
-     </div>
-
-     <div>
-     <button class="btn btn-primary"  onclick="modifica()">Applica Modifiche</button>
+     <div class="d-flex justify-content-center my-5">
+         <div>
+         <button class="btn btn-secondary btn-reset mx-2" type="reset" onclick="resetForm()">Reset Form</button>
+         </div>
+    
+         <div>
+         <button class="btn btn-secondary btn-eliminaRisorse mx-2" onclick="cancella()">Elimina Risorse</button>
+         </div>
+    
+         <div>
+         <button class="btn btn-secondary btn-modifica mx-2"  onclick="modifica()">Applica Modifiche</button>
+         </div>
      </div>
     </div>
     
@@ -95,7 +97,7 @@ function cancella(){
     const form = document.querySelector("#apiForm")
     form.remove()
   prodottoStampato = `
-   <p> Prodotto Cancellato Con Successo </p>
+   <p class="prodottoCancellato"> Prodotto Cancellato Con Successo </p>
   `
   contenitoreCard.innerHTML = prodottoStampato
 }else{
@@ -123,7 +125,7 @@ function modifica() {
     .then(response => {
         const form1 = document.querySelector("#contenitore1")
         form1.innerHTML = `
-        <p> Prodotto Modificato Correttamente
+        <p class="prodottoModificato"> Prodotto Modificato Correttamente </p>
         `
         return response.json();
     })

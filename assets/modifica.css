@@ -1,0 +1,33 @@
+#description:focus,
+#imageUrl:focus {
+    width: 50vw;
+    height: 5vh; 
+}
+
+
+.btn-home{
+    transition: transform 0.5s ease;
+    margin: 5%;
+}
+
+.btn-home:hover{
+    transform: scale(1.2);
+    border: 3px solid rgb(187, 187, 187);
+}
+
+
+.btn-reset:hover,
+.btn-eliminaRisorse:hover,
+.btn-modifica:hover{
+    border: 3px solid rgb(187, 187, 187);
+}
+
+.prodottoCancellato{
+    font-size: 3em;
+    margin-top: 20%;
+}
+
+.prodottoModificato{
+    font-size: 3em;
+    margin-top: 20%;
+}

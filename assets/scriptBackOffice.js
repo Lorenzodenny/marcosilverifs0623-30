@@ -33,13 +33,13 @@ function submitForm() {
 .then(prodotto => {
   console.log(urlApi, prodotto);
   eleApiCont += `
-    <div class="card col-3 mx-4 my-3">
-      <img src= ${prodotto.imageUrl} class="card-img-top" alt="...">
+    <div class="card col-3 mx-4 my-3 border border-3 border-secondary text-center">
+      <img src= ${prodotto.imageUrl} class="card-img-top  mt-3" alt="Prodotto">
       <div class="card-body">
-        <h5 class="card-title"> ${prodotto.name} </h5>
-        <p class="card-text"> ${prodotto.brand} </p>
-        <p class="card-text"> ${prodotto.description} </p>
-        <p class="card-text"> ${prodotto.price} </p>
+        <h5 class="card-title flow text-white"> ${prodotto.name} </h5>
+        <p class="card-text flow text-white"> ${prodotto.brand} </p>
+        <p class="card-text flow text-white"> ${prodotto.description} </p>
+        <p class="card-text flow text-white"> Price: &euro; ${prodotto.price} </p>
       </div>
     </div>
   `;

@@ -24,12 +24,12 @@ window.onload = async () => {
     const cardStampata = await resp.json()
     
     prodottoStampato = `
-    <div>
+    <div class="text-center">
        <h1>Il prodotto selezionato è:</h1>
        <h2>Nome prodotto: ${cardStampata.name} </h2>
        <img src="${cardStampata.imageUrl}" alt="">
        <p>${cardStampata.description}</p>
-       <p>${cardStampata.price}</p>
+       <p>Price: &euro; ${cardStampata.price}</p>
     </div>
        `
 

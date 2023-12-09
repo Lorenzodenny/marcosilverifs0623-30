@@ -1,0 +1,43 @@
+
+.btn-home{
+    transition: transform 1s ease;
+    margin: 5%;
+}
+
+.btn-home:hover{
+    transform: scale(1.5);
+    border: 3px solid goldenrod;
+}
+
+.btn-reset,
+.btn-sell{
+    margin: 5%;
+}
+
+.btn-reset:hover,
+.btn-sell:hover{
+    border: 3px solid rgb(187, 187, 187);
+}
+
+#apiForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#description:focus,
+#imageUrl:focus {
+    width: 50vw;
+    height: 5vh; 
+}
+
+.flow{
+    text-overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card{
+    background-color: rgb(0, 0, 0);
+}
