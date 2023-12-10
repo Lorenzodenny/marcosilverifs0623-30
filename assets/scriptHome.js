@@ -20,7 +20,7 @@ async function fetcherProdotti(url, options){
         let prodottiApiContainer = "";
         prodotti.forEach(prodotto => {
           prodottiApiContainer +=  `
-            <div class="card col-3 mx-5 my-5 border border-3 border-secondary">
+            <div class="card col-8 col-md-9 col-lg-3 mx-5 my-5 border border-3 border-secondary">
               <img src= ${prodotto.imageUrl} class="card-img-top mt-1 grandezzaImg" alt="prodotto">
               <div class="card-body">
                 <h5 class="card-title flow text-white"> ${prodotto.name} </h5>
